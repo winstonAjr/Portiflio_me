@@ -1,0 +1,97 @@
+@import url(./reset.css);
+
+:root{
+    /*Cores - Principal*/
+    --red: #E3646E;
+    --purple: #BB72E9;
+    --blue: #3996DB;
+    --green: #82BC4F;
+    --yellow: #EABD5F;
+
+    /*Cores - Base*/
+    --gray-100: #0D0E11;
+    --gray-200: #16181D;
+    --gray-300: #292C34;
+    --gray-400: #878EA1;
+    --gray-500: #C0C4CE;
+    --gray-600: #E2E4E9;
+
+    /*Links*/
+    --bg-header: url(../../assets/Background_Intro.png);
+    --bg-footer: url(../../assets/Background_Contacts.png);
+}
+
+header{
+    background: var(--bg-header) no-repeat center/cover;
+    text-align: center;
+
+    
+}
+.info > img:nth-child(1){
+    margin-top: 120px;
+    margin-bottom: 56px;
+    padding: 4.3px;
+    border: 2px solid var(--red);
+    width: 112px;
+    height: 112px;
+    border-radius: 50%;
+}
+.info > p:nth-child(2){
+    margin-bottom: 8px;
+    font-family: 'Inconsolata';
+    font-size: 20px;
+    line-height: 120%;
+    color: var(--gray-500);
+}
+.info h1{
+    margin-bottom: 20px;
+    font-family: 'Asap';
+    font-size: 65px;
+    color: var(--gray-600);
+}
+.info > p:nth-child(4){
+    margin-bottom: 80px;
+    font-family: 'Asap';
+    font-size: 16px;
+    color: var(--gray-400);
+}
+.info{
+    width: 680px;
+    margin: 0 auto;
+}
+.languages{
+    display: inline-flex;
+    align-items: center;
+    gap: 16px;
+    padding-bottom: 94px;
+}
+.languages img{
+    width: 20px;
+    height: 20px;
+}
+.languages span{
+    display: flex;
+    align-items: center;
+    background-color: var(--gray-300);
+    border-radius: 999px;
+    padding: 9px 16px;
+    font-family: 'Maven Pro';
+    color: var(--gray-500);
+    gap: 8px;
+}
+.arrow{
+    padding-bottom: 60px;
+}
+
+
+
+.container-projects{
+    background: var(--gray-300) ;
+
+}
+.container-services{
+    background: var(--gray-200);
+}
+footer{
+    background: var(--bg-footer);
+}
