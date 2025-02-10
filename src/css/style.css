@@ -24,24 +24,46 @@
 header{
     background: var(--bg-header) no-repeat center/cover;
     text-align: center;
-
+    
     
 }
-.info > img:nth-child(1){
+.info{
+    width: 700px;
+    margin: 0 auto;
+}
+.foto-perfil{
     margin-top: 120px;
-    margin-bottom: 56px;
+    position: relative;
+    display: inline-block;
+}
+.foto-perfil > img{
+    
+    
     padding: 4.3px;
     border: 2px solid var(--red);
     width: 112px;
     height: 112px;
     border-radius: 50%;
 }
+.foto-perfil ion-icon{
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    color: var(--green);
+    font-size: 32px;
+    font-weight: 200;
+}
 .info > p:nth-child(2){
+    margin-top: 56px;
     margin-bottom: 8px;
     font-family: 'Inconsolata';
     font-size: 20px;
     line-height: 120%;
     color: var(--gray-500);
+}
+i{
+    color: var(--red);
+    font-style: normal;
 }
 .info h1{
     margin-bottom: 20px;
@@ -55,20 +77,13 @@ header{
     font-size: 16px;
     color: var(--gray-400);
 }
-.info{
-    width: 680px;
-    margin: 0 auto;
-}
 .languages{
     display: inline-flex;
     align-items: center;
     gap: 16px;
     padding-bottom: 94px;
 }
-.languages img{
-    width: 20px;
-    height: 20px;
-}
+
 .languages span{
     display: flex;
     align-items: center;
@@ -78,6 +93,21 @@ header{
     font-family: 'Maven Pro';
     color: var(--gray-500);
     gap: 8px;
+}
+ion-icon[name='logo-html5']{
+    color: var(--red);
+}
+ion-icon[name='logo-css3']{
+    color: var(--blue);
+}
+ion-icon[name='logo-javascript']{
+    color: var(--yellow);
+}
+ion-icon[name='logo-react']{
+    color: var(--blue);
+}
+ion-icon[name='logo-nodejs']{
+    color: var(--green);
 }
 .arrow{
     padding-bottom: 60px;
