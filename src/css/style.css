@@ -21,24 +21,22 @@
     --bg-footer: url(../../assets/Background_Contacts.png);
 }
 
+/*Info*/
+
 header{
     background: var(--bg-header) no-repeat center/cover;
     text-align: center;
-    
-    
 }
 .info{
     width: 700px;
     margin: 0 auto;
 }
 .foto-perfil{
-    margin-top: 120px;
+    margin-top: 40px;
     position: relative;
     display: inline-block;
 }
-.foto-perfil > img{
-    
-    
+.foto-perfil > img{  
     padding: 4.3px;
     border: 2px solid var(--red);
     width: 112px;
@@ -76,12 +74,12 @@ i{
     font-family: 'Asap';
     font-size: 16px;
     color: var(--gray-400);
+    
 }
 .languages{
     display: inline-flex;
     align-items: center;
     gap: 16px;
-    padding-bottom: 94px;
 }
 
 .languages span{
@@ -110,15 +108,76 @@ ion-icon[name='logo-nodejs']{
     color: var(--green);
 }
 .arrow{
+    padding-top: 94px;
     padding-bottom: 60px;
 }
 
-
+/*Projetos*/
 
 .container-projects{
-    background: var(--gray-300) ;
-
+    background: var(--gray-200) ;
+    padding-top: 72px;
+    padding-bottom: 144px;
+    text-align: center;
 }
+.title-projects{
+    padding-bottom: 56px;
+}
+.title-projects p{
+    font-family: 'Inconsolata';
+    font-size: 20px;
+    color: var(--red);
+    padding-bottom: 8px
+}
+.title-projects h2{
+    font-family: 'Asap';
+    font-size: 24px;
+    color: var(--gray-600);
+}
+.grid-projects{
+    display: grid;
+    gap: 25px;
+    place-content: center;
+    grid-template-columns: repeat(3, 330px);
+
+    
+    
+}
+.grid-projects div{
+    background-color: var(--gray-300);
+    padding: 12px;
+    border-radius: 12px;
+}
+.grid-projects img {
+    width: 306px;
+    height: 156px;
+    border-radius: 8px;
+}
+.projects-text{
+    max-width: 306px;
+    max-height: 75px;
+    padding-top: 8px;
+    padding-bottom: 5px;
+}
+.grid-projects h5{
+    text-align: start;
+    color: var(--gray-600);
+    font-family: 'Asap';
+    font-size: 16px ;
+    padding-bottom: 8px;
+}
+.grid-projects p{
+    font-size: 16px;
+    text-align: start;
+    color: var(--gray-500);
+    font-family: 'Maven Pro';
+}
+.card-project:hover{
+    outline: 1.5px solid var(--gray-500) ;
+}
+
+/*Serviços*/
+
 .container-services{
     background: var(--gray-200);
 }
