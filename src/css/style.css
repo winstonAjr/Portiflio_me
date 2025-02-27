@@ -24,12 +24,13 @@
 /*Info*/
 
 header{
-    background: var(--bg-header) no-repeat center/cover;
+    background: var(--bg-header) no-repeat center/cover ;
     text-align: center;
 }
 .info{
     width: 700px;
     margin: 0 auto;
+    padding-top: 40px;
 }
 .foto-perfil{
     margin-top: 40px;
@@ -116,8 +117,7 @@ ion-icon[name='logo-nodejs']{
 
 .container-projects{
     background: var(--gray-200) ;
-    padding-top: 72px;
-    padding-bottom: 144px;
+    padding: 72px 120px 144px;
     text-align: center;
 }
 .title-projects{
@@ -136,12 +136,9 @@ ion-icon[name='logo-nodejs']{
 }
 .grid-projects{
     display: grid;
-    gap: 25px;
+    gap: 24px;
     place-content: center;
     grid-template-columns: repeat(3, 330px);
-
-    
-    
 }
 .grid-projects div{
     background-color: var(--gray-300);
@@ -179,8 +176,129 @@ ion-icon[name='logo-nodejs']{
 /*Serviços*/
 
 .container-services{
-    background: var(--gray-200);
+    background: var(--gray-100);
+    padding: 88px 0 120px;
 }
+.header-service{
+    text-align: center;
+    padding-bottom: 56px;
+}
+.header-service p{
+    font-family: 'Inconsolata';
+    font-size: 20px;
+    color: var(--red);
+    padding-bottom: 8px
+}
+.header-service h2{
+    font-family: 'Asap';
+    font-size: 24px;
+    color: var(--gray-600);
+}
+.grid-services{
+    display: grid;
+    gap: 24px;
+    grid-template-columns: repeat(3,280px);
+    place-content: center;
+}
+.services{
+    padding: 20px;
+    border: 2px solid var(--gray-200);
+    border-radius: 12px;
+}
+.services h5{
+    text-align: start;
+    color: var(--gray-600);
+    font-family: 'Asap';
+    font-size: 16px ;
+    padding-bottom: 8px;
+}
+.services p{
+    font-size: 16px;
+    text-align: start;
+    color: var(--gray-500);
+    font-family: 'Maven Pro';
+}
+.services ion-icon{
+    width: 48px;
+    height: 48px;
+    padding-bottom: 20px;
+}
+
+.services ion-icon[name='desktop-outline']{
+    color: var(--purple);
+}
+.services ion-icon[name='server-outline']{
+    color: var(--yellow);
+}
+.services ion-icon[name='infinite']{
+    color: var(--green);
+}
+/*Contato*/
 footer{
-    background: var(--bg-footer);
+    background: var(--bg-footer) no-repeat center/cover;
+    padding: 128px 120px 200px;
+    text-align: center;
+}
+.header-footer{
+    padding-bottom: 48px;
+}
+.header-footer p{
+    font-family: 'Inconsolata';
+    font-size: 20px;
+    color: var(--purple);
+    padding-bottom: 8px
+}
+.header-footer h2{
+    font-family: 'Asap';
+    font-size: 24px;
+    color: var(--gray-600);
+    padding-bottom: 8px;
+}
+.header-footer p:nth-child(3){
+    font-size: 16px;
+    color: var(--gray-500);
+    font-family: 'Maven Pro';
+}
+/* Links */
+.links-uteis{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: center;
+}
+
+.links-uteis a{
+    display: flex;
+    width: 400px;
+    height: 68px;
+    color: var(--gray-500);
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--gray-300);
+    padding: 0 20px;
+    border-radius: 8px;
+    text-decoration: none;
+}
+.links-uteis a:hover{
+    outline: 2px solid var(--blue);
+    color: var(--blue);
+}
+.links-uteis ion-icon{
+    font-size: 28px;
+}
+
+.links-uteis span{
+    display: flex;
+    align-items: center ;
+    font-size: 16px;
+    font-family: 'Maven Pro';
+}
+.links-uteis span span{
+    margin: 0;
+    white-space: nowrap;
+    padding-left: 12px;
+}
+.links-uteis img{
+    margin-left: auto;
+    color: var(--blue);
 }
