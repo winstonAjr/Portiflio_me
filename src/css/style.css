@@ -1,4 +1,6 @@
 @import url(./reset.css);
+@import url(./mobile.css);
+
 
 :root{
     /*Cores - Principal*/
@@ -21,6 +23,10 @@
     --bg-footer: url(../../assets/Background_Contacts.png);
 }
 
+html{
+    font-size: 62.5%;
+}
+
 /*Info*/
 
 header{
@@ -28,35 +34,37 @@ header{
     text-align: center;
 }
 .info{
-    width: 700px;
+    width: 70rem;
     margin: 0 auto;
-    padding-top: 40px;
+    padding-top: 4rem;
+    max-width: 100%; 
+    box-sizing: border-box;
 }
 .foto-perfil{
-    margin-top: 40px;
+    margin-top: 4rem;
     position: relative;
     display: inline-block;
 }
 .foto-perfil > img{  
-    padding: 4.3px;
-    border: 2px solid var(--red);
-    width: 112px;
-    height: 112px;
+    padding: .43rem;
+    border: .2rem solid var(--red);
+    width: 11.2rem;
+    height: 11.2rem;
     border-radius: 50%;
 }
 .foto-perfil ion-icon{
     position: absolute;
-    bottom: 5px;
-    right: 5px;
+    bottom: .5rem;
+    right: .5rem;
     color: var(--green);
-    font-size: 32px;
+    font-size: 3.2rem;
     font-weight: 200;
 }
 .info > p:nth-child(2){
-    margin-top: 56px;
-    margin-bottom: 8px;
+    margin-top: 5.6rem;
+    margin-bottom: .8rem;
     font-family: 'Inconsolata';
-    font-size: 20px;
+    font-size: 2rem;
     line-height: 120%;
     color: var(--gray-500);
 }
@@ -65,33 +73,37 @@ i{
     font-style: normal;
 }
 .info h1{
-    margin-bottom: 20px;
+    margin-bottom: 2rem;
     font-family: 'Asap';
-    font-size: 65px;
+    font-size: 6.5rem;
     color: var(--gray-600);
 }
 .info > p:nth-child(4){
-    margin-bottom: 80px;
+    margin-bottom: 8rem;
     font-family: 'Asap';
-    font-size: 16px;
+    font-size: 1.6rem;
     color: var(--gray-400);
     
 }
 .languages{
     display: inline-flex;
     align-items: center;
-    gap: 16px;
+    flex-wrap: wrap;
+    gap: 1.6rem;
+    justify-content: center;
+    width: 100%;
 }
 
 .languages span{
     display: flex;
     align-items: center;
     background-color: var(--gray-300);
-    border-radius: 999px;
-    padding: 9px 16px;
+    border-radius: 99.9rem;
+    padding: .9rem 1.6rem;
+    font-size: 1.6rem;
     font-family: 'Maven Pro';
     color: var(--gray-500);
-    gap: 8px;
+    gap: .8rem;
 }
 ion-icon[name='logo-html5']{
     color: var(--red);
@@ -109,119 +121,119 @@ ion-icon[name='logo-nodejs']{
     color: var(--green);
 }
 .arrow{
-    padding-top: 94px;
-    padding-bottom: 60px;
+    padding-top: 9.4rem;
+    padding-bottom: 6rem;
 }
 
 /*Projetos*/
 
 .container-projects{
     background: var(--gray-200) ;
-    padding: 72px 120px 144px;
+    padding: 7.2rem 12rem 14.4rem;
     text-align: center;
 }
 .title-projects{
-    padding-bottom: 56px;
+    padding-bottom: 5.6rem;
 }
 .title-projects p{
     font-family: 'Inconsolata';
-    font-size: 20px;
+    font-size: 2rem;
     color: var(--red);
-    padding-bottom: 8px
+    padding-bottom: .8rem
 }
 .title-projects h2{
     font-family: 'Asap';
-    font-size: 24px;
+    font-size: 2.4rem;
     color: var(--gray-600);
 }
 .grid-projects{
     display: grid;
-    gap: 24px;
+    gap: 2.4rem;
     place-content: center;
-    grid-template-columns: repeat(3, 330px);
+    grid-template-columns: repeat(3, 33rem);
 }
 .grid-projects div{
     background-color: var(--gray-300);
-    padding: 12px;
-    border-radius: 12px;
+    padding: 1.2rem;
+    border-radius: 1.2rem;
 }
 .grid-projects img {
-    width: 306px;
-    height: 156px;
-    border-radius: 8px;
+    width: 30.6rem;
+    height: 15.6rem;
+    border-radius: .8rem;
 }
 .projects-text{
-    max-width: 306px;
-    max-height: 75px;
-    padding-top: 8px;
-    padding-bottom: 5px;
+    max-width: 30.6rem;
+    max-height: 7.5rem;
+    padding-top: .8rem;
+    padding-bottom: .5rem;
 }
 .grid-projects h5{
     text-align: start;
     color: var(--gray-600);
     font-family: 'Asap';
-    font-size: 16px ;
-    padding-bottom: 8px;
+    font-size: 1.6rem ;
+    padding-bottom: .8rem;
 }
 .grid-projects p{
-    font-size: 16px;
+    font-size: 1.6rem;
     text-align: start;
     color: var(--gray-500);
     font-family: 'Maven Pro';
 }
 .card-project:hover{
-    outline: 1.5px solid var(--gray-500) ;
+    outline: .15rem solid var(--gray-500) ;
 }
 
 /*Serviços*/
 
 .container-services{
     background: var(--gray-100);
-    padding: 88px 0 120px;
+    padding: 8.8rem 0 12rem;
 }
 .header-service{
     text-align: center;
-    padding-bottom: 56px;
+    padding-bottom: 5.6rem;
 }
 .header-service p{
     font-family: 'Inconsolata';
-    font-size: 20px;
+    font-size: 2rem;
     color: var(--red);
-    padding-bottom: 8px
+    padding-bottom: .8rem;
 }
 .header-service h2{
     font-family: 'Asap';
-    font-size: 24px;
+    font-size: 2.4rem;
     color: var(--gray-600);
 }
 .grid-services{
     display: grid;
-    gap: 24px;
-    grid-template-columns: repeat(3,280px);
+    gap: 2.4rem;
+    grid-template-columns: repeat(3,28rem);
     place-content: center;
 }
 .services{
-    padding: 20px;
-    border: 2px solid var(--gray-200);
-    border-radius: 12px;
+    padding: 2rem;
+    border: .2rem solid var(--gray-200);
+    border-radius: 1.2rem;
 }
 .services h5{
     text-align: start;
     color: var(--gray-600);
     font-family: 'Asap';
-    font-size: 16px ;
-    padding-bottom: 8px;
+    font-size: 1.6rem ;
+    padding-bottom: .8rem;
 }
 .services p{
-    font-size: 16px;
+    font-size: 1.6rem;
     text-align: start;
     color: var(--gray-500);
     font-family: 'Maven Pro';
 }
 .services ion-icon{
-    width: 48px;
-    height: 48px;
-    padding-bottom: 20px;
+    width: 4.8rem;
+    height: 4.8rem;
+    padding-bottom: 2rem;
 }
 
 .services ion-icon[name='desktop-outline']{
@@ -236,26 +248,26 @@ ion-icon[name='logo-nodejs']{
 /*Contato*/
 footer{
     background: var(--bg-footer) no-repeat center/cover;
-    padding: 128px 120px 200px;
+    padding: 12.8rem 12rem 20rem;
     text-align: center;
 }
 .header-footer{
-    padding-bottom: 48px;
+    padding-bottom: 4.8rem;
 }
 .header-footer p{
     font-family: 'Inconsolata';
-    font-size: 20px;
+    font-size: 2rem;
     color: var(--purple);
-    padding-bottom: 8px
+    padding-bottom: .8rem;
 }
 .header-footer h2{
     font-family: 'Asap';
-    font-size: 24px;
+    font-size: 2.4rem;
     color: var(--gray-600);
-    padding-bottom: 8px;
+    padding-bottom: .8rem;
 }
 .header-footer p:nth-child(3){
-    font-size: 16px;
+    font-size: 1.6rem;
     color: var(--gray-500);
     font-family: 'Maven Pro';
 }
@@ -263,40 +275,40 @@ footer{
 .links-uteis{
     display: flex;
     flex-direction: column;
-    gap: 16px;
+    gap: 1.6rem;
     align-items: center;
 }
 
 .links-uteis a{
     display: flex;
-    width: 400px;
-    height: 68px;
+    width: 40rem;
+    height: 6.8rem;
     color: var(--gray-500);
     align-items: center;
     justify-content: space-between;
     background-color: var(--gray-300);
-    padding: 0 20px;
-    border-radius: 8px;
+    padding: 0 2rem;
+    border-radius: .8rem;
     text-decoration: none;
 }
 .links-uteis a:hover{
-    outline: 2px solid var(--blue);
+    outline: .2rem solid var(--blue);
     color: var(--blue);
 }
 .links-uteis ion-icon{
-    font-size: 28px;
+    font-size: 2.8rem;
 }
 
 .links-uteis span{
     display: flex;
     align-items: center ;
-    font-size: 16px;
+    font-size: 1.6rem;
     font-family: 'Maven Pro';
 }
 .links-uteis span span{
     margin: 0;
     white-space: nowrap;
-    padding-left: 12px;
+    padding-left: 1.2rem;
 }
 .links-uteis img{
     margin-left: auto;

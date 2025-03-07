@@ -1,0 +1,21 @@
+@media (max-width: 768px) {
+    .languages span {
+        flex: 1 1 calc(25% - 1.6rem);
+        max-width: calc(25% - 1.6rem); 
+    }
+    .grid-projects {
+        grid-template-columns: 1fr !important;
+        gap: 2rem;
+        place-items: center;
+    }
+    .services{
+        min-width: 31rem;
+    }
+    .grid-services {
+        grid-template-columns: 1fr !important;
+        gap: 2rem;
+        place-items: center;
+    }
+    
+
+}
