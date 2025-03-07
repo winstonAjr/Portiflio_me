@@ -156,23 +156,25 @@ ion-icon[name='logo-nodejs']{
 }
 .grid-projects div{
     background-color: var(--gray-300);
-    padding: 1.2rem;
+    padding: 1.2rem 1.2rem 1.7rem;
     border-radius: 1.2rem;
 }
-.grid-projects img {
+.grid-projects picture img {
     width: 30.6rem;
     height: 15.6rem;
     border-radius: .8rem;
 }
-.card-project h5{
-    padding-top: .8rem;
-    text-align: center;
+.card-project picture h5{
+    padding-top: 2rem;
+    text-align: start;
     color: var(--gray-600);
     font-family: 'Asap',sans-serif;
     font-size: 1.6rem ;
 }
 
-.card-projects p{
+.card-projects picture p{
+    padding-top: .8rem;
+    padding-bottom: .5rem;
     font-size: 1.6rem;
     text-align: start;
     color: var(--gray-500);
