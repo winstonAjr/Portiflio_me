@@ -124,6 +124,7 @@ ion-icon[name='logo-nodejs']{
 .arrow{
     padding-top: 9.4rem;
     padding-bottom: 6rem;
+    animation: flutuar 1s infinite ease-in-out;
 }
 
 /*Projetos*/
