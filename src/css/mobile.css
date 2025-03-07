@@ -1,4 +1,8 @@
 @media (max-width: 768px) {
+    .info h1{
+        font-size: 4rem !important;
+        
+    }
     .languages span {
         flex: 1 1 calc(25% - 1.6rem);
         max-width: calc(25% - 1.6rem); 
@@ -16,6 +20,8 @@
         gap: 2rem;
         place-items: center;
     }
-    
+    .links-uteis a{
+        width: 28rem !important;
+    }
 
 }

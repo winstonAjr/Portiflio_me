@@ -1,5 +1,6 @@
 @import url(./reset.css);
 @import url(./mobile.css);
+@import url(./animations.css);
 
 
 :root{
@@ -162,20 +163,15 @@ ion-icon[name='logo-nodejs']{
     height: 15.6rem;
     border-radius: .8rem;
 }
-.projects-text{
-    max-width: 30.6rem;
-    max-height: 7.5rem;
+.card-project h5{
     padding-top: .8rem;
-    padding-bottom: .5rem;
-}
-.grid-projects h5{
-    text-align: start;
+    text-align: center;
     color: var(--gray-600);
     font-family: 'Asap';
     font-size: 1.6rem ;
-    padding-bottom: .8rem;
 }
-.grid-projects p{
+
+.card-projects p{
     font-size: 1.6rem;
     text-align: start;
     color: var(--gray-500);
@@ -313,4 +309,17 @@ footer{
 .links-uteis img{
     margin-left: auto;
     color: var(--blue);
+}
+
+.card-project, .projects-text {
+    background: linear-gradient(110deg,#222 40%, rgba(255, 255, 255, 0.2) 50%, #222 60%);
+    box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.1);
+    background-size: 200% 100%;
+    animation: shine 3s infinite linear;
+}
+.links-uteis a {
+    background: linear-gradient(110deg,#222 40%, rgba(255, 255, 255, 0.2) 50%, #222 60%);
+    box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.1);
+    background-size: 200% 100%;
+    animation: shine 3s infinite linear;
 }
