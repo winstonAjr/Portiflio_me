@@ -174,10 +174,13 @@ picture h5{
 picture p{
     padding-top: .8rem;
     padding-bottom: .5rem;
-    font-size: 1.6rem !important;
+    font-size: 1.6rem;
     text-align: start;
     color: var(--gray-500);
     font-family: 'Maven Pro',sans-serif;
+}
+picture a{
+    text-decoration: none;
 }
 .card-project:hover{
     outline: .15rem solid var(--gray-500) ;
